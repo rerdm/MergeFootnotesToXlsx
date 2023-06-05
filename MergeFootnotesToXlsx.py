@@ -132,7 +132,7 @@ class ReadTxtFileForFootnotes:
                                 else:
 
                                     print("[C"+str(insert_references_in_line)+"] = " + ",".join(new_line))
-                                    self.footnote_worksheet['C' + str(insert_references_in_line)] = int(insert_references_in_line)
+                                    self.footnote_worksheet['C' + str(insert_references_in_line)] = int(insert_references_in_line-1)
 
                                     self.footnote_worksheet['C' + str(insert_references_in_line)].alignment = openpyxl.styles.Alignment(
                                         horizontal="center", vertical="center"
